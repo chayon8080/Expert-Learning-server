@@ -12,7 +12,7 @@ app.get('/course-catagories', (req, res) => {
     res.send(catagories)
 
 });
-app.get('/catagory/:id', (req, res) => {
+app.get('/catagories/:id', (req, res) => {
     const id = req.params.id;
     const catagorycourse = course.filter(n => n.category_id === id);
     res.send(catagorycourse)
